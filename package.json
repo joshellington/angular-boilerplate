@@ -1,0 +1,30 @@
+{
+  "name": "angular-boilerplate",
+  "version": "1.0.0",
+  "description": "An opinionated Angular boilerplate.",
+  "scripts": {
+    "start": "http-server -a localhost -p 8000 -c-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joshellington/angular-boilerplate"
+  },
+  "author": "Josh Ellington",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joshellington/angular-boilerplate/issues"
+  },
+  "homepage": "https://github.com/joshellington/angular-boilerplate",
+  "devDependencies": {
+    "bower": "^1.3.12",
+    "connect-livereload": "^0.5.3",
+    "express": "^4.12.3",
+    "gulp": "^3.8.11",
+    "gulp-concat": "^2.5.2",
+    "gulp-livereload": "^3.8.0",
+    "gulp-sass": "^1.3.3",
+    "gulp-uglify": "^1.1.0",
+    "gulp-util": "^3.0.4",
+    "tiny-lr": "^0.1.5"
+  }
+}
