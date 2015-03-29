@@ -2,6 +2,7 @@ var gulp = require('gulp'),
     gutil = require('gulp-util'),
     sass = require('gulp-sass'),
     livereload = require('gulp-livereload'),
+    open = require('gulp-open'),
     tinylr;
 
 function notifyLiveReload(event) {
@@ -40,6 +41,14 @@ gulp.task('watch', function() {
   gulp.watch('app/js/**/*.js', notifyLiveReload);
 });
 
-gulp.task('default', ['express', 'livereload', 'watch'], function() {
-  
+gulp.task('open', function() {
+  var options = {
+    url: 'http://localhost:4000/app/#/',
+    app: 'google chrome'
+  };
+
+  gulp.src('./app/index.html')
+    .pipe(open('', options));
 });
+
+gulp.task('default', ['express', 'livereload', 'open', 'watch']);
