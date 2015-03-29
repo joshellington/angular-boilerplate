@@ -1,5 +1,5 @@
 angular.module('myApp.controllers', [])
 
 .controller('HomeCtrl', function($scope) {
-  $scope.title = "DUDE";
+  $scope.title = "Current time: " + new Date();
 });

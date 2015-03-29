@@ -35,7 +35,7 @@ gulp.task('livereload', function() {
 
 gulp.task('watch', function() {
   gulp.watch('app/css/*.scss', ['sass']);
-  gulp.watch('app/*/*.html', notifyLiveReload);
+  gulp.watch('app/**/*.html', notifyLiveReload);
   gulp.watch('app/css/*.css', notifyLiveReload);
   gulp.watch('app/js/**/*.js', notifyLiveReload);
 });
