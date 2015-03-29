@@ -1,5 +1,7 @@
 angular.module('myApp.controllers', [])
 
-.controller('HomeCtrl', function($scope) {
-  $scope.title = "Current time: " + new Date();
+.controller('HomeCtrl', function($scope, ExampleService) {
+  ExampleService.getIp().then(function(data) {
+    $scope.ip = data.ip;
+  });
 });

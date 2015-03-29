@@ -5,9 +5,14 @@ angular.module('myApp', ['ui.router', 'myApp.controllers', 'myApp.services'])
   $stateProvider
 
   .state('home', {
-    url: "/",
-    templateUrl: "views/home.html",
+    url: '/',
+    templateUrl: 'views/home.html',
     controller: 'HomeCtrl'
+  })
+  .state('detail', {
+    url: '/detail',
+    templateUrl: 'views/detail.html',
+    controller: 'DetailCtrl'
   });
 
   $urlRouterProvider.otherwise('/');
