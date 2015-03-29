@@ -17,3 +17,6 @@ angular.module('myApp', ['ui.router', 'myApp.controllers', 'myApp.services'])
 
   $urlRouterProvider.otherwise('/');
 });
+
+angular.module('myApp.controllers', []);
+angular.module('myApp.services', []);
