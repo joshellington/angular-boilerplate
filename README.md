@@ -9,3 +9,8 @@ Another opinionated boilerplate for Angular. Pulled from various sources.
 `bower install`
 
 `gulp`
+
+## TODO
+
+- Consider BrowserSync over LiveReload
+- Look at Browserify and modules for JS
